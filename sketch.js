@@ -257,7 +257,7 @@ function setup() {
   deadButton.style('border-radius', '10px');
   
   survButton = createButton('YOU LIVED');
-  survButton.position(canvasX + (width * 0.46), height*0.07);
+  survButton.position(canvasX + (width * 0.16), height*0.07);
   survButton.size(width*0.7, height*0.3);
   survButton.style('color', '#000');
   survButton.style('background-color', 'rgba(122, 44, 44, 0.7)');
