@@ -67,7 +67,7 @@ function setup() {
   
   //home and tutorial buttons
   tutorialButton = createButton('Tutorial');
-  tutorialButton.position(canvasX + (width * 0.25), height*0.77);
+  tutorialButton.position(canvasX + (width * 0.25), canvasY + (height*0.77));
   tutorialButton.size(width*0.5, height*0.15);
   tutorialButton.style('color', '#000');
   tutorialButton.style('background-color', '#6a555b');
@@ -78,7 +78,7 @@ function setup() {
   tutorialButton.mousePressed(tutorialFunction);
   
   startButton = createButton('Start');
-  startButton.position(canvasX + (width * 0.28), height*0.52);
+  startButton.position(canvasX + (width * 0.28), canvasY + (height*0.52));
   startButton.size(width*0.45, height*0.13);
   startButton.style('color', '#000');
   startButton.style('background-color', '#7a2c2c');
@@ -90,7 +90,7 @@ function setup() {
   
   //tv buttons
   tvLeftButton = createButton('<');
-  tvLeftButton.position(canvasX + (width * 0.23), height*0.77);
+  tvLeftButton.position(canvasX + (width * 0.23), canvasY + (height*0.77));
   tvLeftButton.size(width*0.2, height*0.15);
   tvLeftButton.style('color', '#000');
   tvLeftButton.style('background-color', '#94a1c1');
@@ -101,7 +101,7 @@ function setup() {
   tvLeftButton.mousePressed(tvChannelBack);
   
   tvRightButton = createButton('>');
-  tvRightButton.position(canvasX + (width * 0.58), height*0.77);
+  tvRightButton.position(canvasX + (width * 0.58), canvasY + (height*0.77));
   tvRightButton.size(width*0.2, height*0.15);
   tvRightButton.style('color', '#000');
   tvRightButton.style('background-color', '#94a1c1');
@@ -113,7 +113,7 @@ function setup() {
   
   //page 8 interaction buttons
   eightHonest = createButton('Be Honest');
-  eightHonest.position(canvasX + (width * 0.15), height*0.63);
+  eightHonest.position(canvasX + (width * 0.15), canvasY + (height*0.63));
   eightHonest.size(width*0.7, height*0.15);
   eightHonest.style('color', '#000');
   eightHonest.style('background-color', '#94a1c1');
@@ -124,7 +124,7 @@ function setup() {
   eightHonest.mousePressed(eightHonestFunction);
   
   eightLie = createButton('Lie');
-  eightLie.position(canvasX + (width * 0.15), height*0.8);
+  eightLie.position(canvasX + (width * 0.15), canvasY + (height*0.8));
   eightLie.size(width*0.7, height*0.15);
   eightLie.style('color', '#000');
   eightLie.style('background-color', '#94a1c1');
@@ -135,7 +135,7 @@ function setup() {
   eightLie.mousePressed(eightLieFunction);
   
   eightGenuine = createButton('Genuine');
-  eightGenuine.position(canvasX + (width * 0.15), height*0.63);
+  eightGenuine.position(canvasX + (width * 0.15), canvasY + (height*0.63));
   eightGenuine.size(width*0.7, height*0.15);
   eightGenuine.style('color', '#000');
   eightGenuine.style('background-color', '#94a1c1');
@@ -146,7 +146,7 @@ function setup() {
   eightGenuine.mousePressed(eightGenuineFunction);
   
   eightAnnoyed = createButton('Annoyed');
-  eightAnnoyed.position(canvasX + (width * 0.15), height*0.8);
+  eightAnnoyed.position(canvasX + (width * 0.15), canvasY + (height*0.8));
   eightAnnoyed.size(width*0.7, height*0.15);
   eightAnnoyed.style('color', '#000');
   eightAnnoyed.style('background-color', '#94a1c1');
@@ -158,7 +158,7 @@ function setup() {
   
   //page 27 interaction buttons
   twnSvnLie = createButton('Not sure');
-  twnSvnLie.position(canvasX + (width * 0.15), height*0.69);
+  twnSvnLie.position(canvasX + (width * 0.15), canvasY + (height*0.69));
   twnSvnLie.size(width*0.7, height*0.13);
   twnSvnLie.style('color', '#000');
   twnSvnLie.style('background-color', '#663741');
@@ -169,7 +169,7 @@ function setup() {
   twnSvnLie.mousePressed(twnSvnLieFunction);
   
   twnSvnTruth = createButton('He died');
-  twnSvnTruth.position(canvasX + (width * 0.15), height*0.83);
+  twnSvnTruth.position(canvasX + (width * 0.15), canvasY + (height*0.83));
   twnSvnTruth.size(width*0.7, height*0.13);
   twnSvnTruth.style('color', '#000');
   twnSvnTruth.style('background-color', '#663741');
@@ -180,7 +180,7 @@ function setup() {
   twnSvnTruth.mousePressed(twnSvnTruthFunction);
   
   twnSvnLieBack = createButton('Tell her what you saw');
-  twnSvnLieBack.position(canvasX + (width * 0.15), height*0.69);
+  twnSvnLieBack.position(canvasX + (width * 0.15), canvasY + (height*0.69));
   twnSvnLieBack.size(width*0.7, height*0.13);
   twnSvnLieBack.style('color', '#000');
   twnSvnLieBack.style('background-color', '#663741');
@@ -191,7 +191,7 @@ function setup() {
   twnSvnLieBack.mousePressed(twnSvnLieBackFunction);
   
   twnSvnLieCont = createButton('Say nothing');
-  twnSvnLieCont.position(canvasX + (width * 0.15), height*0.83);
+  twnSvnLieCont.position(canvasX + (width * 0.15), canvasY + (height*0.83));
   twnSvnLieCont.size(width*0.7, height*0.13);
   twnSvnLieCont.style('color', '#000');
   twnSvnLieCont.style('background-color', '#663741');
@@ -202,7 +202,7 @@ function setup() {
   twnSvnLieCont.mousePressed(twnSvnLieContFunction);
   
   twnSvnTruthBack = createButton('Im joking!');
-  twnSvnTruthBack.position(canvasX + (width * 0.15), height*0.69);
+  twnSvnTruthBack.position(canvasX + (width * 0.15), canvasY + (height*0.69));
   twnSvnTruthBack.size(width*0.7, height*0.13);
   twnSvnTruthBack.style('color', '#000');
   twnSvnTruthBack.style('background-color', '#663741');
@@ -213,7 +213,7 @@ function setup() {
   twnSvnTruthBack.mousePressed(twnSvnTruthBackFunction);
   
   twnSvnTruthCont = createButton('Say nothing');
-  twnSvnTruthCont.position(canvasX + (width * 0.15), height*0.83);
+  twnSvnTruthCont.position(canvasX + (width * 0.15), canvasY + (height*0.83));
   twnSvnTruthCont.size(width*0.7, height*0.13);
   twnSvnTruthCont.style('color', '#000');
   twnSvnTruthCont.style('background-color', '#663741');
@@ -236,7 +236,7 @@ function setup() {
   continueBut.mousePressed(continueButtonFunc);
   
   homeButton = createButton('Start Over');
-  homeButton.position(canvasX + (width * 0.26), height*0.4);
+  homeButton.position(canvasX + (width * 0.26), canvasY + (height*0.4));
   homeButton.size(width*0.5, height*0.15);
   homeButton.style('color', '#000');
   homeButton.style('background-color', '#7a2c2c');
@@ -247,7 +247,7 @@ function setup() {
   homeButton.mousePressed(startOverFunction);
   
   deadButton = createButton('YOU DIED');
-  deadButton.position(canvasX + (width * 0.16), height*0.07);
+  deadButton.position(canvasX + (width * 0.16), canvasY + (height*0.07));
   deadButton.size(width*0.7, height*0.3);
   deadButton.style('color', '#000');
   deadButton.style('background-color', 'rgba(122, 44, 44, 0.7)');
@@ -257,7 +257,7 @@ function setup() {
   deadButton.style('border-radius', '10px');
   
   survButton = createButton('YOU LIVED');
-  survButton.position(canvasX + (width * 0.16), height*0.07);
+  survButton.position(canvasX + (width * 0.16), canvasY + (height*0.07));
   survButton.size(width*0.7, height*0.3);
   survButton.style('color', '#000');
   survButton.style('background-color', 'rgba(122, 44, 44, 0.7)');
@@ -275,11 +275,11 @@ function draw() {
   let canvasY = (windowHeight - height) / 2;
   
   if (pageNumber < 40) {
-    continueBut.position(canvasX + (width * 0.15), height*0.72);
+    continueBut.position(canvasX + (width * 0.15), canvasY + (height*0.72));
     continueBut.style('background-color', '#94a1c1');
     continueBut.style('border', '7px solid #2a354f');
   } else {
-    continueBut.position(canvasX + (width * 0.15), height*0.76);
+    continueBut.position(canvasX + (width * 0.15), canvasY + (height*0.76));
     continueBut.style('background-color', '#663741');
     continueBut.style('border', '7px solid #150d0f');
   }
