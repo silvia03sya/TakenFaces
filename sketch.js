@@ -878,7 +878,7 @@ function windowResized() {
   deadButton.position(canvasX + (width * 0.16), canvasY + (height*0.07));
   deadButton.size(width*0.7, height*0.3);
   
-  survButton.position(canvasX + (width * 0.46), canvasY + (height*0.07));
+  survButton.position(canvasX + (width * 0.16), canvasY + (height*0.07));
   survButton.size(width*0.7, height*0.3);
 }
 
