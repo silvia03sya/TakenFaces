@@ -884,5 +884,5 @@ function toggleFullscreen() {
   
   setTimeout(() => {
   windowResized();
-  }, 100);
+  }, 1000);
 }
